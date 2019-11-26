@@ -1,7 +1,12 @@
 import React from 'react';
-import {Nav, Navbar} from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
+import "../nav.css";
+
+
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
 // import styled from 'styled-component';
-import {DropdownMenu, MenuItem} from 'react-bootstrap-dropdown-menu';
+//import { DropdownMenu, MenuItem } from 'react-bootstrap-dropdown-menu';
 
 
 // const styles = styled.div`
@@ -11,41 +16,32 @@ import {DropdownMenu, MenuItem} from 'react-bootstrap-dropdown-menu';
 
 function Navigation() {
 
-    return(
-<section>
-        <Navbar collapseOnSelect expand="lg" bg="success" variant="dark" fixed="top">
-  <Navbar.Brand href="#home">HOME</Navbar.Brand>
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="mr-auto">
-      <Nav.Link href="#features">ABOUT</Nav.Link>
-      <Nav.Link href="#pricing">CONTACT</Nav.Link>
-      <DropdownMenu userName="Chris Smith">
-        <MenuItem text="Home" location="/home" />
-        <MenuItem text="Edit Profile" location="/profile" />
-        <MenuItem text="Change Password" location="/change-password" />
-        <MenuItem text="Privacy Settings" location="/privacy-settings" />
-      </DropdownMenu>
+  return (
+    <section>
+      <Navbar collapseOnSelect expand="lg" bg="success" variant="dark" fixed="top" className="nav">
+        <Navbar.Brand href="/" class="logo"> SOO-CLEAN</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav>
+            <Nav.Link href="/">HOME </Nav.Link>
+            <Nav.Link href="/About">ABOUT </Nav.Link>
+            <Nav.Link href="/Reason">REASON </Nav.Link>
+            <Nav.Link href="/Cleanoffice">OFFICE </Nav.Link>
+            <Nav.Link href="/Carpet"> CARPET </Nav.Link>
+            <Nav.Link href="/Other"> OTHERS </Nav.Link>
+            <Nav.Link href="/Client"> CLIENT </Nav.Link>
+            <Nav.Link href="/Contact"> CONTACT </Nav.Link>
+            <Nav.Link href="/"></Nav.Link>
+            <Nav.Link href="/"></Nav.Link>
+            <Nav.Link href="/"></Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </section>
 
-      {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown> */}
-    </Nav>
-    <Nav>
-      <Nav.Link href="#deets">More deets</Nav.Link>
-      <Nav.Link eventKey={2} href="#memes">Dank memes</Nav.Link>
-    </Nav>
-  </Navbar.Collapse>
-</Navbar>
-</section>
 
-     
-    
-    )
-    }
+
+  )
+}
 
 export default Navigation;

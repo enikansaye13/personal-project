@@ -1,5 +1,59 @@
 .navbar{
+    @media screen and (max-width:800px)
+    width:100%;
     background-color: green;
     text-decoration: none;
     display: flex;
+}
+.logo{
+    border: 5px solid red;
+    opacity: 0.5;
+}
+
+h2{
+    color: green;
+    padding-top:20px;
+    paddind-bottom:40px;
+}
+.about{
+padding: 0px;
+border-bottom: 3px solid green;
+@media screen and (max-width:800px)
+width:100%;
+
+}
+.abo{
+    border-bottom: 3px solid green;
+    text-align: center;
+    margin-top: auto;
+    padding-top:20px;
+    word-spacing: 10px;
+    @media screen and (max-width:800px)
+    width:100%;
+}
+.abo2{
+    border-spacing: 100px;
+    @media screen and (max-width:800px)
+    width:100%;
+}
+
+.off{
+    border-top: 3px solid green;
+}
+#about{
+padding: 10px;
+@media screen and (max-width:800px)
+width:100%;
+}
+.client{
+    border-bottom: 3px solid green;
+    border-top: 3px solid green;
+    text-align: center;
+    @media screen and (max-width:800px)
+    width:100%;
+}
+.cli{
+    border-bottom: 3px solid gainsboro;
+    @media screen and (max-width:800px)
+    width:100%;
 }
