@@ -10,6 +10,8 @@ import Carpet from './component/Carpet';
 import Marble from './component/Marble';
 import Other from './component/Other';
 import Client from './component/Client';
+import Footer from './component/Footer'
+// import Location from './component/Location'
 // import NoMatch from './component/NoMatch';
 import './App.css';
 
@@ -30,21 +32,21 @@ class App extends Component{
         <Client />
 
         <Contact/> */}
-<Navigation />
+
          <Router>
+          <Navigation />
         
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/About" Component={About} />
-            <Route path="/Reason" Component={Reason} />
-            <Route path="/Cleanoffice" Component={Cleanoffice} />
-            <Route path="/Carpet" Component={Carpet} />
-            <Route path="/Marble" Component={Marble} />
-            <Route path="/Other" Component={Other} />
-            <Route path="/Client" Component={Client} />
-            <Route path="/Contact" Component={Contact} />
-
-            </Switch>
+            <Route path="/About" component={About} />
+            <Route path="/Reason" component={Reason} />
+            <Route path="/Cleanoffice" component={Cleanoffice} />
+            <Route path="/Carpet" component={Carpet} />
+            <Route path="/Marble" component={Marble} />
+            <Route path="/Other" component={Other} />
+            <Route path="/Client" component={Client} />
+            <Route path="/Contact" component={Contact} />
+         </Switch>
         </Router>
 
          {/* <Home /> */}
@@ -55,8 +57,8 @@ class App extends Component{
         <Marble />
         <Other />
         <Client />
-
         <Contact/>
+        <Footer />
       </React.Fragment>
 
     );

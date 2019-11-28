@@ -12,11 +12,11 @@ function Reason() {
   return (
     <div>
     <Container className="reason">
-      <h1>why choosen us?</h1>
+      <h1>WHY CHOOSEN US?</h1>
       
       <Row className="rea">
         <Col md={7}>
-        <h3>Caring For Our premises</h3>
+        <h4>Caring For Our premises</h4>
       <p>Having a clean building is about making a great impression, creating an endearing environment for visitors and clients, and maintaining a productive environment for your staff.</p>
           <p> We genuinely care about the buildings we work in. The way your space is presented speaks volume, and the responsibility for this will always start and end with us. Above all, we want to help you to free up your time so that you can do what you do best.</p>
 
@@ -35,7 +35,7 @@ function Reason() {
           </ul>
         </Col>
         <Col md={5}>
-          <h3>Our core value</h3>
+          <h4>Our core value</h4>
           <ul>
             <li>Integrity</li>
             <li>Professionalism</li>
