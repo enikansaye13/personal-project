@@ -16,6 +16,7 @@ const initialState = {
   phone: "",
   address: "",
   location: "",
+  message: "",
   emailError: "",
   nameError: "",
   phoneError: "",
@@ -122,30 +123,30 @@ export default class Contact extends React.Component {
               <Form>
                 <Form.Group controlId="formBasicEmail">
                   {/* <Form.Label></Form.Label> */}
-                  <Form.Control type="email" placeholder="Enter email" value={this.state.location}
+                  <Form.Control type="email" placeholder="Enter email" name="email"
                     onChange={this.handleChange} />
                   <div style={{ fontSize: 12, variant: "success" }}>{this.state.emailError}</div> {/* <Form.Text className="text-muted"> */}
                   {/* </Form.Text> */}
                 </Form.Group>
                 <Form.Group controlId="formBasicText">
                   <Form.Label></Form.Label>
-                  <Form.Control type="text" placeholder="full name"
+                  <Form.Control type="text" placeholder="full name" name="name"
                     onChange={this.handleChange} />
                   <div style={{ fontSize: 12, variant: "success" }}>{this.state.nameError}</div>
                 </Form.Group>
                 <Form.Group controlId="formBasicText">
                   {/* <Form.Label></Form.Label> */}
-                  <Form.Control type="number" placeholder="080"
+                  <Form.Control type="number" placeholder="080" name="phone"
                     onChange={this.handleChange} />
                 </Form.Group>
                 <Form.Group controlId="formBasicText">
                   {/* <Form.Label></Form.Label> */}
-                  <Form.Control type="text" placeholder="address"
+                  <Form.Control type="text" placeholder="address" name="address"
                     onChange={this.handleChange} />
                 </Form.Group>
                 <Form.Group controlId="exampleForm.ControlSelect1">
                   {/* <Form.Label></Form.Label> */}
-                  <Form.Control as="select" value={this.state.location}
+                  <Form.Control as="select" name="location"
                     onChange={this.handleChange}>
                     <option>Abuja</option>
                     <option>Lagos</option>
@@ -156,7 +157,7 @@ export default class Contact extends React.Component {
 
                 <Form.Group controlId="exampleForm.ControlTextarea1">
                   {/* <Form.Label>MASSAGE</Form.Label> */}
-                  <Form.Control as="textarea" rows="5 " placeholder="message" value={this.state.massage}
+                  <Form.Control as="textarea" rows="5 " placeholder="message" name="message"
                     onChange={this.handleChange} />
                 </Form.Group>
 
